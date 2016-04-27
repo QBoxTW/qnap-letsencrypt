@@ -48,6 +48,9 @@ installed. Therefore we will have to download one manually.
 
     **multiple domain cert:** (replace nas.xxx.de and nas.xxx.com with your domain names)
     ```
+    
+    Remark: the below line cp ../openssl.cnf openssl-csr-conf.cnf should be cp ../openssl.cnf openssl-csr-config.cnf
+            as you add the mutiple sides  
     cd letsencypt
     cp ../openssl.cnf openssl-csr-conf.cnf
     printf "subjectAltName=DNS:nas.xxx.de,DNS:nas.xxx.com" >> openssl-csr-config.cnf
